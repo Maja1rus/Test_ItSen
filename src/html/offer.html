@@ -1,0 +1,64 @@
+<section class="offer">
+    <div class="container">
+        <h2 class="h2 offer__title">
+            Что мы предлагаем?  
+        </h2>
+
+        <span class="offer__subtitle">
+            Все каналы коммуникации в одном месте
+        </span>
+
+        <div class="offer__wrapper">
+            @@include('offer-card.html', {
+                'type': 'long',
+                'title': 'SMS-рассылки',
+                'text': 'Рассылки по номерам России и других стран с возможностью сегментации. При необходимости, поможем собрать базу под ваше предложение. <span class="offer__text-accent">+ Регистрируем альфа-имя</span> Чтобы клиенты доверяли вашей рассылке',
+                'price': 'от 2,95 ₽/SMS',
+                'image': 'offer-image-1.png',
+                'link': '#',
+            })
+            @@include('offer-card.html', {
+                'type': 'short',
+                'unavailable': true,
+                'title': 'Мессенджеры',
+                'tag': 'в разработке',
+                'text': 'Отправка официальных сообщений через Telegram, WhatsApp Business, ВКонтакте, Viber.',
+                'price': 'от 1,50 ₽/сообщение',
+                'link': '#',
+            })
+            @@include('offer-card.html', {
+                'type': 'short',
+                'unavailable': true,
+                'title': 'E-mail',
+                'tag': 'в разработке',
+                'text': 'Удобный редактор писем и рассылки по вашей базе.',
+                'price': 'от 0,50 ₽/сообщение',
+                'link': '#',
+            })
+            @@include('offer-card.html', {
+                'type': 'long',
+                'title': 'Автообзвоны',
+                'text': '<a href="#" class="link">Голосовой робот</a> напомнит про оплату, расскажет про продукт или ответит на звонок клиента.',
+                'price': 'от 2,60 ₽/минута',
+                'link': '#'
+            })
+            @@include('offer-card.html', {
+                'type': 'long',
+                'unavailable': true,
+                'title': 'Push-уведомления',
+                'tag': 'в разработке',
+                'text': 'Рассылка уведомлений внутри браузера для посетителей вашего сайта или для пользователей вашего приложения.',
+                'price': 'от 0,03 ₽/сообщение',
+                'link': '#',
+            })
+        </div>
+
+        <div class="offer__button">
+            <button class="button">
+                Заказать звонок
+            </button>
+        </div>
+    </div>
+</section>
+
+

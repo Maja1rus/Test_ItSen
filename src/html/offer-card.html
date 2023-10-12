@@ -1,0 +1,30 @@
+<div class="offer__card @@if (type =='long') {offer__card_long}@@if (type =='short') {offer__card_short} @@if (context.unavailable) {offer__card_unavailable}">
+    <span class="h3 offer__name">
+        @@title
+    </span>
+    @@if (context.tag) {
+        <span class="offer__tag">
+            @@tag
+        </span>
+    }
+    @@if (context.text) {
+        <p class="offer__text">
+             @@text
+        </p>
+    }
+    @@if (context.price) {
+        <span class="offer__price">
+            @@price
+        </span>
+    }
+    @@if (context.image) {
+        <div class="offer__image">
+            <img src="@img/offer/@@image" alt="Фото" width="317" height="274">
+        </div>
+    }
+    @@ if (context.link) {
+        <a href="@@link" class="offer__link link">
+            Смотреть тарифы
+        </a>
+    }
+</div>

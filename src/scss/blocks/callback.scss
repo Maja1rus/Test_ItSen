@@ -1,0 +1,36 @@
+.callback {
+  margin-bottom: 115px;
+}
+
+.callback__wrapper {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 30px;
+  padding: 37px 30px 39px;
+  border-radius: 20px;
+  background-color:$common-color;
+  box-shadow: 3px 4px 14px 0px rgba(0, 0, 0, 0.08);
+}
+
+.callback__title {
+  max-width: 500px;
+  margin-bottom: 8px;
+  margin-bottom: 12px;
+}
+
+.callback__subtitle {
+  line-height: 110%;
+  letter-spacing: -0.64px;
+}
+
+.callback__form {
+  display: grid;
+  column-gap: 8px;
+  row-gap: 8px;
+  padding-top: 3px;
+  grid-template-columns: 370px 340px;
+
+  .form__policy {
+    grid-column: 1/3;
+  }
+}

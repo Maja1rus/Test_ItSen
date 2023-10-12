@@ -1,0 +1,25 @@
+.first-screen {
+  padding: 46px 30px 42px 30px;
+  margin-bottom: 8px;
+}
+
+.first-screen__wrapper {
+  display: flex;
+  column-gap: 62px;
+}
+
+.first-screen__text {
+  color: $color-white;
+}
+
+.first-screen__title {
+  max-width: 680px;
+  margin-top: 68px;
+  margin-bottom: 34px
+}
+
+.first-screen__subtitle {
+  font-size: 26px;
+  line-height: 110%;
+  letter-spacing: -1.04px;
+}

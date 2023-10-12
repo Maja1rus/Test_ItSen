@@ -1,0 +1,47 @@
+@mixin laptop {
+  @media screen and (max-width: $desktop-width) {
+      @content;
+  }
+}
+
+@mixin tablet {
+  @media screen and (max-width: calc($laptop-width - 1px)) {
+      @content;
+  }
+}
+
+@mixin mobile {
+  @media screen and (max-width: calc($tablet-width - 1px)) {
+      @content;
+  }
+}
+
+// Шрифты
+@mixin font($font: $font_regular) {
+
+  //SoyuzGrotesk
+  @if $font == SoyuzGrotesk {
+    font-family: 'Soyuz Grotesk', sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+
+  // Inter
+  @if $font == Inter {
+      font-family: 'Inter', sans-serif;
+      font-weight: 400;
+      font-style: normal;
+  }
+
+  @if $font == Inter-m {
+      font-family: 'Inter', sans-serif;
+      font-weight: 500;
+      font-style: normal;
+  }
+
+  @if $font == Inter-b {
+      font-family: 'Inter', sans-serif;
+      font-weight: 700;
+      font-style: normal;
+  }
+}

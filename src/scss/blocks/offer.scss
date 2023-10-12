@@ -1,0 +1,137 @@
+.offer {
+  margin-bottom: 120px;
+}
+
+.offer__title {
+  margin-bottom: 22px;
+}
+
+.offer__subtitle {
+  display: block;
+  margin-bottom: 39px;
+  color: $color-dark;
+  font-size: 28px;
+  line-height: 110%;
+  letter-spacing: -1.12px;
+}
+
+.offer__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 8px;
+  row-gap: 8px;
+  margin-bottom: 8px;
+}
+
+.offer__card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 26px 30px 20px 30px;
+  width: 100%;
+  border-radius: 20px;
+  background: $bg2;
+}
+
+.offer__card_long {
+  max-width: 688px;
+
+  .offer__text {
+    margin-top: auto;
+    margin-bottom: 10px;
+  }
+
+  &.offer__card_unavailable {
+    min-height: 221px;
+
+    .offer__name {
+      margin-bottom: 8px;
+    }
+
+    .offer__tag {
+      margin-bottom: 11px;
+    }
+
+    .offer__text {
+      margin-bottom: auto;
+      margin-top: 0;
+    }
+  }
+}
+
+.offer__card_short {
+  max-width: 310px;
+  min-height: 245px;
+
+  .offer__name {
+    margin-bottom: 28px;
+  }
+
+  .offer__tag {
+    margin-bottom: 31px;
+  }
+
+  .offer__price {
+    margin-top: auto;
+  }
+}
+
+.offer__card_unavailable {
+
+  .offer__name,
+  .offer__text,
+  .offer__price,
+  .offer__link {
+    opacity: 0.5;
+    pointer-events: none;
+  }
+}
+
+.offer__tag {
+  padding: 7px 10px 6px 10px;
+  color: $color-dark-second;
+  font-size: 12px;
+  letter-spacing: -0.48px;
+  text-transform: uppercase;
+  background-color: $common-color;
+  border-radius: 40px;
+}
+
+.offer__text {
+  line-height: 110%;
+  letter-spacing: -0.64px;
+}
+
+.offer__text-accent {
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 8px;
+  font-size: 26px;
+  line-height: 110%;
+  letter-spacing: -1.04px;
+}
+
+.offer__image {
+  position: absolute;
+  right: 23px;
+  bottom: -42px;
+}
+
+.offer__price {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 26px;
+  font-weight: 400;
+}
+
+.offer__link {
+  letter-spacing: -0.64px;
+}
+
+.offer__button {
+
+  .button {
+    height: 90px;
+  }
+}

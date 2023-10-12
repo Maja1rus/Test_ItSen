@@ -1,0 +1,18 @@
+.socials {
+  display: flex;
+  align-items: center;
+}
+
+.social {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.social_tg {
+  background-image: url('../img/icons/icon-tg.svg');
+}
+
+.social_wa {
+  background-image: url('../img/icons/icon-wa.svg');
+}

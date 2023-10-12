@@ -1,0 +1,22 @@
+.button {
+  @include font($font_regular);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 70px;
+  width: 100%;
+  padding: 0 20px;
+  font-size: 26px;
+  line-height: 80%;
+  letter-spacing: -1.04px;
+  border: none;
+  color: $color-white;
+  border-radius: 40px;
+  background-color: $color-black;
+  cursor: pointer;
+  transition: box-shadow 0.3s ease-in-out;
+
+  &:hover {
+    box-shadow: 6.70522px 6.70522px 16.76304px 0px rgba(0, 0, 0, 0.25), 4.47014px 4.47014px 55.8768px 0px rgba(0, 0, 0, 0.35);
+  }
+}
